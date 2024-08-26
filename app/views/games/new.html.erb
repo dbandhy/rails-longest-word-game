@@ -1,0 +1,15 @@
+<h1>Check your letters and vowels. 🚀</h1>
+
+<form action="/score" method="post" data-turbo="false">
+  <!-- ... -->
+  <%= @gameLetters %>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+ <h1>Guess the longest word in English</h1>
+  <input type="text" name="word">
+  <h2>Type your result</h2>
+  <input type="submit" name="play">
+</form>
+
+<h3>
+<%= link_to "PLAY AGAIN", "/new" %>
+</h3>
